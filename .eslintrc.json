@@ -33,9 +33,16 @@
       "prettier/prettier": "error",
       "class-methods-use-this": "off",
       "camelcase": "off",
-      "@typescript-eslint/no-unused-vars": ["error", {
-        "argsIgnorePattern": "_"
-      }]
+      "@typescript-eslint/no-unused-vars": ["off"],
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          "selector": "interface",
+          "prefix": ["I"],
+          "format": ["PascalCase"]
+        }
+      ],
+      "no-useless-constructor": "off"
     },
     "settings": {
       "import/resolver": {
