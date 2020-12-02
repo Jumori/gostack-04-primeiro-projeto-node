@@ -1,7 +1,7 @@
 
 
 <h1 align="center">
-  GoBarber Web services
+  GoBarber Web Services
 </h1>
 
 <p align="center">
@@ -16,7 +16,7 @@
 </p>
 
 <h4 align="center">
-	Concluído 🚀
+	🚧 Em construção 🚀 🚧
 </h4>
 
 Tabela de conteúdos
