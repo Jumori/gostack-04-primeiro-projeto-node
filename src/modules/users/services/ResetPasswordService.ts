@@ -7,14 +7,14 @@ import IUserTokensRepository from '../repositories/IUserTokensRepository';
 import IHashProvider from '../providers/HashProvider/models/IHashProvider';
 
 interface IRequest {
-  token: string,
-  password: string,
+  token: string;
+  password: string;
 }
 
 @injectable()
 class ResetPasswordService {
   constructor(
-    @inject('UserRepository')
+    @inject('UsersRepository')
     private usersRepository: IUsersRepository,
 
     @inject('UserTokensRepository')

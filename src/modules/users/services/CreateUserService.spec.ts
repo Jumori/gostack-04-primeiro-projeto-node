@@ -10,7 +10,10 @@ describe('CreateUser', () => {
     const fakeUsersRepository = new FakeUsersRepository();
     const fakeHashProvider = new FakeHashProvider();
 
-    const createUser = new CreateUserService(fakeUsersRepository, fakeHashProvider);
+    const createUser = new CreateUserService(
+      fakeUsersRepository,
+      fakeHashProvider,
+    );
 
     const user = await createUser.execute({
       name: 'John Doe',
@@ -25,7 +28,10 @@ describe('CreateUser', () => {
     const fakeUsersRepository = new FakeUsersRepository();
     const fakeHashProvider = new FakeHashProvider();
 
-    const createUser = new CreateUserService(fakeUsersRepository, fakeHashProvider);
+    const createUser = new CreateUserService(
+      fakeUsersRepository,
+      fakeHashProvider,
+    );
 
     await createUser.execute({
       name: 'John Doe',
@@ -33,10 +39,12 @@ describe('CreateUser', () => {
       password: '123456',
     });
 
-    await expect(createUser.execute({
-      name: 'John Doe',
-      email: 'johndoe@example.com',
-      password: '123456',
-    })).rejects.toBeInstanceOf(AppError);
+    await expect(
+      createUser.execute({
+        name: 'John Doe',
+        email: 'johndoe@example.com',
+        password: '123456',
+      }),
+    ).rejects.toBeInstanceOf(AppError);
   });
 });

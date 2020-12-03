@@ -34,7 +34,10 @@ class AutheticateUserService {
       throw new AppError('Incorrect email/password combination', 401);
     }
 
-    const passowrdMatched = await this.hashProvider.compareHash(password, user.password);
+    const passowrdMatched = await this.hashProvider.compareHash(
+      password,
+      user.password,
+    );
 
     if (!passowrdMatched) {
       throw new AppError('Incorrect email/password combination', 401);

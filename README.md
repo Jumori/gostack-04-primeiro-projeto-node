@@ -110,7 +110,7 @@ $ yarn start
 
 ```
 <p align="center">
-  <a href="https://github.com/Jumori/gostack-04-primeiro-projeto-node/blob/master/Insomnia_2020-10-22" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+  <a href="https://github.com/Jumori/gostack-04-primeiro-projeto-node/blob/master/Insomnia_2020-12-03" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 </p>
 
 ## 🛠 Tecnologias
