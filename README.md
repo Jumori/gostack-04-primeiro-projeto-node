@@ -45,42 +45,42 @@ GoBarber web services - conjunto de funcionalidade back-end para o GoBarber, uma
 - [x] Usuário cadastrado deve poder se autenticar na aplicação para ter acesso às demais funcionalidades
 
 ### Recuperação de senha
-- [ ] Usuário deve poder recuperar sua senha informando o seu email
-  - [ ] [RNF] Utilizar Mailtrap para testar envios em ambiente de desenvolvimento
-  - [ ] [RNF] Utilizar Amazon SES para envios em produção
-  - [ ] [RNF] O envio de emails deve acontecer em segundo plano (background job)
-- [ ] Usuário deve receber um email com instruções de recuperação de senha
-  - [ ] [RN] O link enviado por email para resetar senha, deve expirar em 2 horas
-- [ ] Usuário deve poder resetar sua senha
-  - [ ] [RN] Usuário precisa confirmar a nova senha ao resetar sua senha
+- [x] Usuário deve poder recuperar sua senha informando o seu email
+  - [x] [RNF] Utilizar [Ethereal](http://ethereal.email/) para testar envios em ambiente de desenvolvimento
+  - [x] [RNF] Utilizar [Amazon SES](https://aws.amazon.com/pt/ses/) para envios em produção
+  - [x] [RNF] O envio de emails deve acontecer em segundo plano (background job)
+- [x] Usuário deve receber um email com instruções de recuperação de senha
+  - [x] [RN] O link enviado por email para resetar senha, deve expirar em 2 horas
+- [x] Usuário deve poder resetar sua senha
+  - [x] [RN] Usuário precisa confirmar a nova senha ao resetar sua senha
 
 ### Atualização do perfil
-- [ ] Usuário deve poder atualizar seu nome, email e senha
-  - [ ] [RN] Usuário não pode alterar seu email para um email já utilizado
-  - [ ] [RN] Para atualizar sua senha, o usuário deve informar a senha antiga
-  - [ ] [RN] Para atualizar sua senha, o usuário deve confirmar a nova senha
-- [ ] Usuário deve poder atualizar seu avatar
+- [x] Usuário deve poder atualizar seu nome, email e senha
+  - [x] [RN] Usuário não pode alterar seu email para um email já utilizado
+  - [x] [RN] Para atualizar sua senha, o usuário deve informar a senha antiga
+  - [x] [RN] Para atualizar sua senha, o usuário deve confirmar a nova senha
+- [x] Usuário deve poder atualizar seu avatar
 
 ### Agendamento de serviços
-- [ ] Usuário deve poder listar todos prestadores de serviço cadastrados
-  - [ ] [RNF] Listagem de prestadores deve ser armazenada em cache
-- [ ] Usuário deve poder listar os dias de um mês com pelo menos um horário disponível de um prestador
-- [ ] Usuário deve poder listar horários disponíveis em um dia específico de um prestador
-- [ ] Usuário deve poder realizar um novo agendamento com um prestador
-  - [ ] [RN] Cada agendamento deve durar 1 hora exatamente
-  - [ ] [RN] Os agendamentos devem estar disponíveis entre 8h às 18h (Primeiro às 8h, último ás 17h)
-  - [ ] [RN] Usuário não pode agendar em um horário já ocupado
-  - [ ] [RN] Usuário não pode agendar em um horário que já passou
-  - [ ] [RN] Usuário não pode agendar serviços com ele próprio
+- [x] Usuário deve poder listar todos prestadores de serviço cadastrados
+  - [x] [RNF] Listagem de prestadores deve ser armazenada em cache
+- [x] Usuário deve poder listar os dias de um mês com pelo menos um horário disponível de um prestador
+- [x] Usuário deve poder listar horários disponíveis em um dia específico de um prestador
+- [x] Usuário deve poder realizar um novo agendamento com um prestador
+  - [x] [RN] Cada agendamento deve durar 1 hora exatamente
+  - [x] [RN] Os agendamentos devem estar disponíveis entre 8h às 18h (Primeiro às 8h, último ás 17h)
+  - [x] [RN] Usuário não pode agendar em um horário já ocupado
+  - [x] [RN] Usuário não pode agendar em um horário que já passou
+  - [x] [RN] Usuário não pode agendar serviços com ele próprio
 
 ### Painel do prestador
-- [ ] Usuário deve poder listar seus agendamentos de um dia específico
-  - [ ] [RNF] Os agendamentos do prestador no dia atual devem ser armazenados em cache
-- [ ] Prestador deve receber uma notificação sempre que houver um novo agendamento
-  - [ ] [RNF] As notificações do prestador devem ser armazenadas no MongoDB
-  - [ ] [RNF] As notificações do prestador devem ser enviadas em tempo-real utilizando Socket.io
+- [x] Usuário deve poder listar seus agendamentos de um dia específico
+  - [x] [RNF] Os agendamentos do prestador no dia atual devem ser armazenados em cache
+- [x] Prestador deve receber uma notificação sempre que houver um novo agendamento
+  - [x] [RNF] As notificações do prestador devem ser armazenadas no [MongoDB](https://www.mongodb.com/)
+  - [ ] [RNF] As notificações do prestador devem ser enviadas em tempo-real utilizando [Socket.io](Socket.io)
 - [ ] Prestador deve poder visualizar as notificações não lidas
-  - [ ] [RN] A notificação deve ter um status de lida ou não-lida para que o prestador possa controlar
+  - [x] [RN] A notificação deve ter um status de lida ou não-lida para que o prestador possa controlar
 ## 🚀 Como executar o projeto
 
 Este projeto possui apenas os serviços do back-end (servidor).
@@ -110,7 +110,7 @@ $ yarn start
 
 ```
 <p align="center">
-  <a href="https://github.com/Jumori/gostack-04-primeiro-projeto-node/blob/master/Insomnia_2020-12-04" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+  <a href="https://github.com/Jumori/gostack-04-primeiro-projeto-node/blob/master/Insomnia_2020-12-28" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 </p>
 
 ## 🛠 Tecnologias
